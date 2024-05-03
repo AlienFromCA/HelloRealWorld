@@ -8,7 +8,7 @@ RUN dotnet restore
 
 # Copy the remaining files and build the project
 COPY . ./
-RUN dotnet public -c Release -o out
+RUN dotnet publish -c Release -o out
 
 
 # Use the official .NET runtime image
